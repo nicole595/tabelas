@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula de Web I</title>
+    <link rel="stylesheet" href="css/estilo.css" />
+    <link rel="stylesheet" href="css/responsivo.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <input id="menu-toggle" type="checkbox" />
+        <label for="menu-toggle">
+          <div class="menu-hamburger">
+            <span class="hamburger"></span>
+          </div>
+        </label>
+      </nav>
+    </header>
+    <main class="content">
+      <form method="POST" action="" enctype="multipart/form-data">
+        <fieldset>
+          <legend>Contato</legend>
+          <div>
+            <label for="nome">Nome: </label>
+            <input type="text" name="nome" id="nome" placeholder="José" required />
+          </div>
+          <div>
+            <label for="email">E-mail: </label>
+            <input type="text" name="email" id="email" placeholder="jose@jose.com.br" required /> 
+          </div>
+          <input type="radio" name="gender" value="Masculino" id="Masculino" /><label for="Masculino" required >Masculino</label>
+          <input type="radio" name="gender" value="Feminino" id="Feminino" /> <label for="Feminino" required >Feminino</label> <br />
+          <label for="estado/cidade">Estado/Cidade </label>
+          <input type="text" name="estado/cidade" id="estado/cidade" required /> 
+          <select name="estado/cidade[]" id="estado/cidade" required >
+            <option></option>
+            <option value="1">MG </option>
+            <option value="2">RJ</option>
+            <option value="3">SP</option>
+          </select>
+         <input type="text" name="cidade" id="cidade" required> 
+          <br />
+          <label for="arquivo">Selecione um arquivo</label>
+          <input type="file" name="arquivo" id="arquivo" required /> <br />
+          <label for="sugestao">Sugestão: </label> <br />
+          <textarea name="sugestao" id="sugestao"></textarea>
+       
+        </fieldset>
+      </form>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+    </main>
+  </body>
+</html>
