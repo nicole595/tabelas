@@ -35,7 +35,6 @@
           <input type="radio" name="gender" value="Masculino" id="Masculino" /><label for="Masculino" required >Masculino</label>
           <input type="radio" name="gender" value="Feminino" id="Feminino" /> <label for="Feminino" required >Feminino</label> <br />
           <label for="estado/cidade">Estado/Cidade </label>
-          <input type="text" name="estado/cidade" id="estado/cidade" required /> 
           <select name="estado/cidade[]" id="estado/cidade" required >
             <option></option>
             <option value="1">MG </option>
@@ -45,10 +44,15 @@
          <input type="text" name="cidade" id="cidade" required> 
           <br />
           <label for="arquivo">Selecione um arquivo</label>
-          <input type="file" name="arquivo" id="arquivo" required /> <br />
-          <label for="sugestao">Sugestão: </label> <br />
+          <input type="file" name="arquivo" id="arquivo" required /> 
+          <br />
+          <label for="sugestao">Sugestão: </label> 
+          <br />
           <textarea name="sugestao" id="sugestao"></textarea>
-       
+          <br />
+          <picture>
+            <input type="image" src="./img/logoenviar.jpeg">
+          </picture>
         </fieldset>
       </form>
       <p>&nbsp;</p>
